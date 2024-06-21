@@ -3,7 +3,9 @@ package com.example.pirateriafeedbacks.model;
 
 import com.google.gson.annotations.SerializedName;
 
-public class Atividades {
+import java.io.Serializable;
+
+public class Atividades implements Serializable {
     @SerializedName("idAtividade")
     private int idAtividade;
     @SerializedName("tituloAtividade")
@@ -19,7 +21,7 @@ public class Atividades {
     @SerializedName("acaoRealizada")
     private String acaoRealizada;
 
-    public Atividades(int idAtividade, String tituloAtividade, String descricaoAtividade, String dataAtividade, String statusAtividade, String acaoRealizada) {
+    public Atividades() {
         this.idAtividade = idAtividade;
         this.tituloAtividade = tituloAtividade;
         this.descricaoAtividade = descricaoAtividade;

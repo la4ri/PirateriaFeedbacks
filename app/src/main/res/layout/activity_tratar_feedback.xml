@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Título"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textDescricao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descrição"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/textId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ID"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/textStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp" />
+
+    <ImageView
+        android:id="@+id/statusCircle"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="8dp" />
+
+    <!-- Novo campo de entrada para resposta -->
+    <EditText
+        android:id="@+id/respostafeedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite sua resposta"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:background="@drawable/edit_text_background"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/textViewMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A partir do Feedback, inserir alguma atividade na lista de Afazeres?"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonSim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sim"
+            android:checked="false"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonNao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Não"
+            android:checked="true"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/llAddActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Título da Atividade:"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/editTextTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite o título da atividade..."
+            android:background="@drawable/edit_text_background"/>
+
+        <TextView
+            android:id="@+id/textViewDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descrição da Atividade:"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/editTextDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite a descrição da atividade..."
+            android:minLines="3"
+            android:background="@drawable/edit_text_background"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAdicionarAtividade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adicionar Atividade"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/Voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

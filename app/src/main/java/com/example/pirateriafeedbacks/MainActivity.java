@@ -13,12 +13,15 @@ import androidx.core.view.WindowInsetsCompat;
 import com.example.pirateriafeedbacks.Activities.AtividadeActivity;
 import com.example.pirateriafeedbacks.Activities.CardapioActivity;
 import com.example.pirateriafeedbacks.Activities.FeedbackActivity;
+import com.example.pirateriafeedbacks.Activities.FeedbackPendentesActivity;
 
 public class MainActivity extends AppCompatActivity {
 
     private Button btnConfiguracaoCardapio;
     private Button btnTodosFeedbacks;
     private Button btnListaAfazeres;
+    private Button btnFeedbacksPendentes;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +50,12 @@ public class MainActivity extends AppCompatActivity {
         btnListaAfazeres = findViewById(R.id.btnListaAfazeres);
         btnListaAfazeres.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, AtividadeActivity.class);
+            startActivity(intent);
+        });
+
+        btnFeedbacksPendentes = findViewById(R.id.btnFeedbacksPendentes);
+        btnFeedbacksPendentes.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, FeedbackPendentesActivity.class);
             startActivity(intent);
         });
 

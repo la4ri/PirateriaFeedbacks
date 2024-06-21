@@ -31,6 +31,7 @@ public class CardapioCustomAdapter extends RecyclerView.Adapter<CardapioCustomAd
         public final View mView;
 
         TextView txtTitle;
+        TextView txtDescription;
         private ImageView coverImage;
 
         CustomViewHolder(View itemView) {
@@ -39,6 +40,7 @@ public class CardapioCustomAdapter extends RecyclerView.Adapter<CardapioCustomAd
 
             txtTitle = mView.findViewById(R.id.title);
             coverImage = mView.findViewById(R.id.coverImage);
+            txtDescription = mView.findViewById(R.id.description);
         }
     }
 
@@ -52,6 +54,7 @@ public class CardapioCustomAdapter extends RecyclerView.Adapter<CardapioCustomAd
     @Override
     public void onBindViewHolder(CustomViewHolder holder, int position) {
         holder.txtTitle.setText(dataList.get(position).getTituloCardapio());
+        holder.txtDescription.setText(dataList.get(position).getDescricaoCardapio());
 
         Picasso.Builder builder = new Picasso.Builder(context);
         builder.downloader(new OkHttp3Downloader(context));

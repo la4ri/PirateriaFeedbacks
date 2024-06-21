@@ -26,7 +26,16 @@
 
         <activity android:name=".Activities.CardapioActivity" />
         <activity android:name=".Activities.FeedbackActivity" />
+        <activity android:name=".Activities.VisualizarFeedbackActivity" />
         <activity android:name=".Activities.AtividadeActivity" />
+        <activity android:name=".Activities.FeedbackPendentesActivity" />
+        <activity android:name=".Activities.TratarFeedbackActivity"/>
+        <activity android:name=".Activities.TratarAtividadeActivity"/>
+
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

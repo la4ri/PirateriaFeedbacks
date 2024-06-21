@@ -12,15 +12,29 @@
         android:scaleType="centerCrop" />
 
     <!-- TextView para exibir o título -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="105dp"
+            android:fontFamily="@font/forum"
+            android:text="Título do Item"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
     <TextView
-        android:id="@+id/title"
+        android:id="@+id/description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_toEndOf="@id/coverImage"
-        android:layout_marginStart="16dp"
-        android:text="Título do Item"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_centerVertical="true"/>
+        android:layout_marginStart="115dp"
+        android:text="Descrição item"
+        android:layout_marginTop="25dp"
+        android:textSize="15dp"
+        android:fontFamily="@font/cabin"/>
 
 </RelativeLayout>

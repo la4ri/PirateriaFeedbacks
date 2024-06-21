@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/design_default_color_secondary" />
+
+    <TextView
+        android:id="@+id/textId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#ID 00000 - 00/00/0000"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginLeft="5dp"
+        android:fontFamily="@font/cabin"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <!-- Layout do Título, Bolinha de Status e Status -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/textTitulo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Título"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"/>
+
+        <!-- Bolinha de Status -->
+        <ImageView
+            android:id="@+id/statusCircle"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/circle_shape" />
+
+        <!-- Status -->
+        <TextView
+            android:id="@+id/textStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:paddingStart="3dp"
+            android:paddingEnd="16dp"/> <!-- PaddingEnd para alinhar à direita -->
+
+    </LinearLayout>
+
+    <!-- Linha Horizontal -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="3dp"/>
+
+    <!-- Descrição -->
+    <TextView
+        android:id="@+id/textDescricao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descrição aqui..."
+        android:textSize="20sp"
+        android:layout_marginTop="0dp"
+        android:padding="50dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginBottom="100dp"/>
+
+    <Button
+        android:id="@+id/Voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        android:layout_margin="10dp"/>
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<!-- res/layout/custom_row.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <!-- TextView para exibir o título -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/idfeedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="ID"
+                android:textSize="14sp"
+                android:paddingStart="16dp"
+                android:textColor="@android:color/darker_gray"
+                android:fontFamily="@font/cabin"
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="288dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Título do item"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/status_circle"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/circle_shape" />
+
+            <!-- Status -->
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:textSize="14sp"
+                android:textColor="@android:color/darker_gray"
+                android:paddingStart="3dp"
+                android:paddingEnd="16dp"/>
+
+
+        </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="Descrição item"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="50dp"
+        android:textSize="15dp"
+        android:fontFamily="@font/cabin"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+</LinearLayout>

@@ -6,13 +6,19 @@
     android:background="#FFFFFF"
     tools:context=".MainActivity">
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/colorPrimary"/>
     <ImageView
         android:id="@+id/logoImageViewMain"
-        android:layout_width="200dp"
-        android:layout_height="70dp"
+        android:layout_width="5000dp"
+        android:layout_height="100dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:src="@drawable/ic_logo" />
+        android:src="@drawable/ic_logo"
+
+        android:background="@color/colorPrimary"/>
 
     <TextView
         android:id="@+id/txtBemVindo"
@@ -49,7 +55,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Todos Feedbacks"
-            android:background="#D92E26"
+            android:background="#AB1C18"
             android:textColor="#FFFFFF"/>
 
         <Button
@@ -58,7 +64,7 @@
             android:layout_height="wrap_content"
             android:text="Feedbacks Pendentes"
             android:layout_marginTop="16dp"
-            android:background="#D92E26"
+            android:background="#AB1C18"
             android:textColor="#FFFFFF"/>
 
         <Button
@@ -67,7 +73,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="Lista de Afazeres"
-            android:background="#D92E26"
+            android:background="#AB1C18"
             android:textColor="#FFFFFF" />
 
         <Button
@@ -76,7 +82,7 @@
             android:layout_height="wrap_content"
             android:text="Configuração Cardápio"
             android:layout_marginTop="16dp"
-            android:background="#D92E26"
+            android:background="#AB1C18"
             android:textColor="#FFFFFF"/>
     </LinearLayout>
 

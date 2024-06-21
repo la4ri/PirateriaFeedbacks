@@ -2,52 +2,72 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF">
+    android:background="#FFFFFF"
+    >
+
+    <RelativeLayout
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/image_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_logo"
+            android:clickable="true"
+            android:focusable="true" />
+    </RelativeLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="FEEDBACKS:"
-        android:textSize="18sp"
+        android:textSize="25dp"
         android:textColor="#000000"
-        android:layout_margin="16dp" />
+        android:layout_marginLeft="5dp"
+        android:fontFamily="@font/cabin"
+        />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
     <RadioGroup
         android:id="@+id/statusRadioGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_margin="16dp">
+        android:layout_margin="1dp">
 
         <RadioButton
             android:id="@+id/todosFeedbacksRadioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Todos"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            android:checked="true"
+            android:fontFamily="@font/cabin"/>
 
         <RadioButton
             android:id="@+id/pendentesFeedbacksRadioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Pendentes"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            android:fontFamily="@font/cabin"/>
 
         <RadioButton
             android:id="@+id/resolvidosFeedbacksRadioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Resolvidos"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            android:fontFamily="@font/cabin"/>
     </RadioGroup>
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@android:color/black"
-        android:textSize="24sp"
-        android:layout_marginTop="16dp"/>
-
+</LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
 

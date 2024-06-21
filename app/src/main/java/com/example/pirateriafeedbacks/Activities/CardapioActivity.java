@@ -1,6 +1,9 @@
 package com.example.pirateriafeedbacks.Activities;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.pirateriafeedbacks.Adapter.CardapioCustomAdapter;
 import com.example.pirateriafeedbacks.HTTPSHelper;
+import com.example.pirateriafeedbacks.MainActivity;
 import com.example.pirateriafeedbacks.R;
 import com.example.pirateriafeedbacks.model.Cardapio;
 
@@ -27,6 +31,18 @@ public class CardapioActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_configuracao_cardapio);
+
+        ImageView logoImageView = findViewById(R.id.image_logo);
+        logoImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Abrir a MainActivity
+                Intent intent = new Intent(CardapioActivity.this, MainActivity.class);
+                startActivity(intent);
+                // Finalizar a Activity atual, se desejar
+                finish();
+            }
+        });
 
 // Configurar RecyclerView
         recyclerView = findViewById(R.id.customRecyclerView); // Corrigido para usar o RecyclerView correto

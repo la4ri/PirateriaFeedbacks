@@ -2,7 +2,9 @@ package com.example.pirateriafeedbacks.model;
 
 import com.google.gson.annotations.SerializedName;
 
-public class Feedback {
+import java.io.Serializable;
+
+public class Feedback implements Serializable {
     @SerializedName("id_feedback")
     private int id_feedback;
     @SerializedName("tituloFeedback")
