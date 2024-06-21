@@ -1,0 +1,26 @@
+<!-- res/layout/custom_row.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- ImageView para exibir a imagem de capa -->
+    <ImageView
+        android:id="@+id/coverImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop" />
+
+    <!-- TextView para exibir o título -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/coverImage"
+        android:layout_marginStart="16dp"
+        android:text="Título do Item"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>
